@@ -1,0 +1,10 @@
+
+Insert: 
+db.json.update({},{$addToSet:{"contatos":{"id":7,"name":"danilo","telefone":"993914077","email":"danilo_email@hormail.com"}}})
+
+Consulta por nome: 
+db.json.findOne({},{"contatos":{$elemMatch:{"name":"danilo"}}})
+
+Remover: 
+db.json.update({},{$pull:{"contatos":{$elemMatch:{"id":8}})
+

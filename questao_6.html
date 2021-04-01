@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <title>Questão 6</title>
+        <style> 
+            #extend {
+                display: grid;
+                grid-template-columns: 1fr;
+                height: 70px;
+                place-items: center;
+            }
+            .centro {
+                display: grid;
+                grid-template-columns: 4fr 1fr;
+                height: 400px;
+            }
+            .div_conteudo {
+                display: grid;
+                margin: 5px;
+                border: 1px solid;
+                place-items: center;
+            }
+            div {
+                text-align: center;
+            }
+        </style>   
+    </head>
+
+    <body>
+
+        <div id="extend" class="div_conteudo" style="background-color: #0056b3">
+            Header
+        </div>
+
+        <div class="centro">
+            <div class="div_conteudo" style="background-color: #00959c">
+                <p>Content </p>
+                <p>Coloquei style dentro de tags HTML para provar que funciona da mesma forma, porém, por questões de organização, não é o ideal.</p>
+                <p>Usei atribuições a partir da class, id e tag. Esta variação depende do tipo de estrutura da página.</p>
+            </div>
+            <div class="div_conteudo" style="background-color: #2aabd2">Aside</div>
+        </div>
+
+        <div id="extend" class="div_conteudo" style="background-color: #0ff">
+            Footer
+        </div>
+
+    </body>
+
+</body>
+
+</html>

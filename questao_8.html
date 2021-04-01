@@ -1,0 +1,23 @@
+<body>
+        Na minha vida, usei os seguintes mecanismos de pesquisa da web:<br/>
+        <a href="//www.cade.com">cade</a><br/>
+        <a href="//www.altavista.com">AltaVista</a><br/>
+        <a href="//www.google.com">Google</a><br/>
+    </body>
+    <script>
+// --------------------------------------------- Questão 8 -------------------------------------------- //
+
+        registerLinks();
+        function registerLinks() { 
+            var as = document.getElementsByTagName('a');
+            let array_href = [];
+            for (var i = 0; i < as.length; i++) {
+              array_href.push(as[i].href);
+                as[i].onclick = function (r) {
+                    const index = array_href.indexOf(r.target.href);
+                    alert(index);
+                    return false;
+                }
+            }
+        }
+    </script>
