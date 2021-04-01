@@ -1,3 +1,4 @@
+// Como não foi especificado qual banco de dados não relacional utilizado no exemplo, considerei o MongoDB
 
 Insert: 
 db.json.update({},{$addToSet:{"contatos":{"id":7,"name":"danilo","telefone":"993914077","email":"danilo_email@hormail.com"}}})
